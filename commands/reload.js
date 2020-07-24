@@ -5,7 +5,7 @@ module.exports = {
         const commandName = args[0].toLowerCase();
         const command = message.client.commands.get(commandName);
 
-        if (!owner) return;
+        if (message.author.id === owner) {
         if (!command) return message.channel.send(`There is no command with the name \`${commandName}\``);
 
         delete require.cache[require.resolve(`./${command.name}.js`)];
@@ -20,6 +20,9 @@ module.exports = {
         {
             console.log(error);
             message.channel.send(`Error encountered while reloading command \`${command.name}\`:\n\`${error.message}\``);
+        }
+    }   else {
+            return message.channel.send("You are not allowed to use this command.")
         }
     },
 }
