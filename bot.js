@@ -19,7 +19,7 @@ const cooldowns = new Discord.Collection();
 
 bot.once('ready', () => {
     console.log(`Bot is ready and working in ${bot.guilds.size} servers with ${bot.users.size} users! The bot is on version ${version}`);
-    bot.user.setActivity(`Asomataru v1.1.2`);
+    bot.user.setActivity(`Asomataru v1.1.3 Beta!`);
     bot.user.setStatus('online', 'Made by The3D#9801')
     console.log('Ready!');
 });
