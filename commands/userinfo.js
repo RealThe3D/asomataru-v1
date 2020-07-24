@@ -21,7 +21,7 @@ module.exports = {
         } else {
             var bot = "No";
         }
-        let embed = new Discord.RichEmbed()
+        var embed = new Discord.MessageEmbed()
             .setThumbnail((target.displayAvatarURL))
             .setColor("#00ff00")
             .addField("Full Username", `${member.user.tag}`, inline)

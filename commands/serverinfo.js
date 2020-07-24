@@ -12,7 +12,7 @@ module.exports = {
 
         let inline = true
         let servericon = message.guild.iconURL;
-        let serverembed = new Discord.RichEmbed()
+        let serverembed = new Discord.MessageEmbed()
             .setColor("#00ff00")
             .setThumbnail(servericon)
             .setAuthor(message.guild.name)
