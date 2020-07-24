@@ -1,0 +1,12 @@
+{
+  "name": "asomataru",
+  "description": "Simple chat bot",
+  "keywords": [
+    "node",
+    "heroku",
+    "discord"
+  ],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }]
+}
