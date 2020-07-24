@@ -6,7 +6,7 @@ module.exports = {
         const Discord = require("discord.js");
         const package = require('../package.json');
         const version = (package.version);
-        const ping = new Discord.RichEmbed()
+        const ping = new Discord.MessageEmbed()
             .setTitle("Ping")
             .setDescription(`Ping?`)
             .setColor(0xDFF8EB)
