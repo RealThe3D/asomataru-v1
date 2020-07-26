@@ -16,7 +16,9 @@ module.exports = {
         if (!member) return message.channel.send(xdemb)
         if (!member.bannable) return message.channel.send("I can't ban this user!")
 
+
         if (member.id === message.author.id) return message.channel.send("You can't ban your self")
+        if (member.id.hasPermission("ADMINSTRATOR" || "BAN_MEMBERS")) return message.channel.send("You can not ban someone who is an admin or have ban perms.")
 
         let reason = args.slice(1).join(" ");
 
@@ -26,7 +28,7 @@ module.exports = {
             res = reason
         }
 
-        await member.ban(reason).catch(error => message.channel.send(`Sorry, I coldn't ban because of: ${error}`));
+        await member.ban(reason).catch(error => message.channel.send(`Sorry, I couldn't ban because of: ${error}`));
 
         let bean = new Discord.MessageEmbed()
             .setColor("#000000")
