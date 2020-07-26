@@ -3,7 +3,7 @@ module.exports = {
     guildOnly: true,
     execute: async (message, args) => {
         const Discord = require("discord.js")
-        let xdemb = new Discord.RichEmbed()
+        let xdemb = new Discord.MessageEmbed()
             .setColor("#000000")
             .setTitle("Ban Command")
             .addField("Description:", `Ban a member`, true)
@@ -28,7 +28,7 @@ module.exports = {
 
         await member.ban(reason).catch(error => message.channel.send(`Sorry, I coldn't ban because of: ${error}`));
 
-        let bean = new Discord.RichEmbed()
+        let bean = new Discord.MessageEmbed()
             .setColor("#000000")
             .setTitle(`Ban | ${member.user.tag}`)
             .addField("User", member, true)
