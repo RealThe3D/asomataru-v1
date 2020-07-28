@@ -11,7 +11,7 @@ module.exports = {
     const random = subReddits[Math.floor(Math.random() * subReddits.length)];
     const img = await randomPuppy(random);
 
-    const embed = Discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
     .setImage (img)
     .setTitle (`From r/${random}`)
     .setURL (`http://reddit.com/${random}`)
