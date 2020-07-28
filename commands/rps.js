@@ -1,7 +1,7 @@
 let rps = ["**:moyai: Rock**", "**:pencil: Paper**", "**:scissors: Scissors**"];
 function random() { return `${rps[Math.floor(Math.random() * Math.floor(2))]}`;}
 
-modules.exports = {
+module.exports = {
     name: 'rps',
     aliases: 'rockpaperscissors',
     execute (message, args) {
