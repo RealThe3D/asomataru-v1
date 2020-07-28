@@ -7,7 +7,7 @@ module.exports = {
         "A perfectionist walked into a bar...apparently, the bar wasn’t set high enough.",
         "Did you hear about the crook who stole a calendar? He got twelve months.",
         "What's the difference between ignorance and apathy\n\n||I don’t know and I don’t care.||",
-        "Did you hear about the semi-colon that broke the law? He was given two consecutive sentences.", //5
+        "Why are frogs so happy?, because whatever bugs them", //5
         "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
         "I own the world's worst thesaurus. Not only is it awful, it's awful.",
         "Velcro—what a rip-off!",

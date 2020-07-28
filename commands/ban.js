@@ -18,8 +18,7 @@ module.exports = {
 
 
         if (member.id === message.author.id) return message.channel.send("You can't ban your self")
-        if (member.hasPermission("ADMINSTRATOR" || "BAN_MEMBERS")) return message.channel.send("You can not ban someone who is an admin or have ban perms.")
-
+    
         let reason = args.slice(1).join(" ");
 
         if (!reason) {
