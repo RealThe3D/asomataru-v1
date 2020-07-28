@@ -1,4 +1,7 @@
 // experimental
+const Discord = require("discord.js");
+const randomPuppy = require("random-puppy");
+
 module.exports = {
     name:'cat2',
     description:'Shows a cat! UwU',
