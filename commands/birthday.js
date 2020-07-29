@@ -6,7 +6,7 @@ module.exports = {
         const Discord = require('discord.js');
 
         const bDayEmbed = new Discord.MessageEmbed()
-        .setImage ("https://www.happybirthdaymsg.com/wp-content/uploads/2016/01/happy-birthday-image-10-500x500-978x200.jpg")
+        .setImage ("https://images.indianexpress.com/2017/01/happy-birthday-wish_1500_thinkstockphotos-531424610.jpg")
         .setTitle("**Happy Birthday, Koro!**")
         
         if (message.author.id === ID || Owner) {
