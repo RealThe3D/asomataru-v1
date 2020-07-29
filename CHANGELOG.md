@@ -1,6 +1,8 @@
 # Changelogs
 ## Versions
 
+### v1.1.4
+`Dog` command and `cat`are now in Embed! `rps` command added! - July 28, 2020
 ### v1.1.3
 reload command added! - July 24, 2020
 ### v1.1.2
@@ -18,6 +20,7 @@ Out of BETA phase, we launching bois!
 
 Asomataru now has a command handler. - July 22, 2020
 
-### v0.1
+## v0.1
+
 ### v0.1 Beta
 Bot created, beta phase. So far only ping command. - July 8, 2020
