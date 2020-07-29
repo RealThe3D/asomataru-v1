@@ -13,7 +13,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
     .setImage (img)
     .setTitle (`**__Who is a good doggo!__**`)
-    .setURL (`http://reddit.com/${random}`)
+    .setURL (`https://reddit.com/${random}`)
     .setFooter (`From r/${random}`)
 
     message.channel.send(embed);
