@@ -1,8 +1,10 @@
 # Changelogs
 ## Versions
 
+### v1.1.5
+`pogchamp` command added, `invite` command added, and `birthday` command is disabled for now, A few topics added to `topic` command, some useless facts were removed to be sfw from `uselessfact`. - August 4, 2020
 ### v1.1.4
-`Dog` command and `cat`are now in Embed! `rps` command added! - July 28, 2020
+`Dog` command and `cat` are now in Embed! `rps` command added! `birthday` command added- July 28, 2020
 ### v1.1.3
 reload command added! - July 24, 2020
 ### v1.1.2

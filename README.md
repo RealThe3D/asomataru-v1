@@ -23,6 +23,7 @@ Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?clien
 | `coinflip` | Flip a coin! |
 | `cat` | Sends a cat image! |
 | `dog` | Sends a dog image! |
+| `pogchamp` | Sends a pogchamp in chat! |
 
 
 

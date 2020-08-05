@@ -25,12 +25,12 @@ module.exports = {
                 title: "Fun:",
                 fields: [{
                     name: "Command",
-                    value: "topic\njoke\ninfo\nuselessfact\ncoinflip\ncat\ndog",
+                    value: "topic\njoke\ninfo\nuselessfact\ncoinflip\ncat\ndog\nrps\npogchamp",
                     inline: true
                 },
                 {
                     name: "Action",
-                    value: "ends an open ended question to start chat\nSends a joke\nAsomataru introduces themself!\nSends a useless fact.\nFlips a coin!\nSends a cat pic!\n Sends a doggo picture!",
+                    value: "ends an open ended question to start chat\nSends a joke\nAsomataru introduces themself!\nSends a useless fact.\nFlips a coin!\nSends a cat pic!\n Sends a doggo picture!\n Play rock paper scissors against Asomataru!\n Shows pogchamp",
                     inline: true
                 }
                 ]
