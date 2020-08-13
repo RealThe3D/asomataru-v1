@@ -30,7 +30,7 @@ module.exports = {
         await member.kick(reason)
             .catch(error => message.reply(`Sorry, I couldn't kick because of : ${error}`));
     
-        let kick = new Discord.RichEmbed()
+        let kick = new Discord.MessageEmbed()
             .setColor("#000000")
             .setTitle(`Kick | ${member.user.tag}`)
             .addField("User", member, true)
