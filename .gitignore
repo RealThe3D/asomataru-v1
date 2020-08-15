@@ -1,2 +1,3 @@
 node_modules
-config.json
+./commands/_commandTemplate.js
+./commands/_commandTemplateEmbed.js
