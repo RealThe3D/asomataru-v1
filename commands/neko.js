@@ -6,7 +6,7 @@ module.exports = {
     description:'Shows a neko!',
     aliases: ['meow'],
     execute: async (message) => {
-    const subReddits = ["neko", "nekos"]
+    const subReddits = ["animegirls"]
     const random = subReddits[Math.floor(Math.random() * subReddits.length)];
     const img = await randomPuppy(random);
 
