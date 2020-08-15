@@ -1,6 +1,6 @@
 # Changelogs
 ## Versions
-### 1.1.7.1
+### v1.1.7.1
 Renamed `moemorphism` to `moe`.
 ### v1.1.7
 Added `moemorphism` command. (Refer to v1.1.7.1 changelog)
@@ -8,7 +8,7 @@ Added `moemorphism` command. (Refer to v1.1.7.1 changelog)
 Updated `credits` to list another person, `kiss` command added, `neko` command added and `birthday` has a new birthday! - August 15, 2020
 ### v1.1.5.2 / 1.1.5 Hotfix 2 
 `ban` and `kick` now properly function. - August 13, 2020
-## v1.1.5.1 / 1.1.5 Hotfix 1
+### v1.1.5.1 / 1.1.5 Hotfix 1
 Asomataru will longr respond to DMs - August 13, 2020
 ### v1.1.5
 `pogchamp` command added, `invite` command added, and `birthday` command is disabled for now, A few topics added to `topic` command, some useless facts were removed to be sfw from `uselessfact`. - August 4, 2020
