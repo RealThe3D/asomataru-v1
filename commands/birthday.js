@@ -1,6 +1,6 @@
 module.exports = {
     name: 'birthday',
     execute: async (message) => {
-       message.channel.send("Birthday is over with, proceed with everything else to offer")
+       message.channel.send("3D's Birthday is on September 17!")
     },
 };

@@ -8,12 +8,12 @@ module.exports = {
                 title: "General:",
                 fields: [{
                     name: "Command",
-                    value: "avatar\nhelp\nping\nversion\ncredits",
+                    value: "avatar\nhelp\nping\nversion\ncredits\ninvite",
                     inline: true
                 },
                 {
                     name: "Action",
-                    value: "Gets the mentioned user's avatar\nShows the commands\nPings the bot's latency\nStates the version number\nA command dedicated to my friends \o/",
+                    value: "Gets the mentioned user's avatar\nShows the commands\nPings the bot's latency\nStates the version number\nA command dedicated to my friends\n Sends an invite to the support server!",
                     inline: true
                 }
                 ]
