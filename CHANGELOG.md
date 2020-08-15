@@ -1,5 +1,9 @@
 # Changelogs
 ## Versions
+### 1.1.7.1
+Renamed `moemorphism` to `moe`.
+### v1.1.7
+Added `moemorphism` command. (Refer to v1.1.7.1 changelog)
 ### v1.1.6 
 Updated `credits` to list another person, `kiss` command added, `neko` command added and `birthday` has a new birthday! - August 15, 2020
 ### v1.1.5.2 / 1.1.5 Hotfix 2 
