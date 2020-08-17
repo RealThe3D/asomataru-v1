@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "discord.js": "^12.2.0",
-    "fs": "0.0.2",
-    "os": "^0.1.1",
-    "random-puppy": "1.1.0"
+    "fs": "0.0.1-security",
+    "got": "^11.5.1,
+    "pm2": "^4.4.0",
+    "random-puppy": "1.1.0",
+    "util": "^0.12.3"
   },
   "engines": {
     "node": "12.x"
