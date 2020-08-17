@@ -4,6 +4,7 @@ Asomataru is a discord bot that is running on Discord.js v12 and Heroku for 24/7
 Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?client_id=730622099525206086&permissions=268823558&scope=bot
 
 > I’m hoping to expand the bot with more commands and make Koro proud!
+
 ## Commands
 
 ### General
@@ -16,15 +17,17 @@ Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?clien
 ### Fun
 | Command | Action |
 |-|-|
-| `topic` | Sends an open ended question to start chat |
-| `joke` | Sends a joke |
-| `info` | Aso will tell you important information about themselves. |
-| `uselessfact` | Asomataru sends a useless fact! |
-| `coinflip` | Flip a coin! |
+| `anime` | Shows an anime girl from r/animegirls|
 | `cat` | Sends a cat image! |
+| `coinflip` | Flip a coin! |
 | `dog` | Sends a dog image! |
-| `pogchamp` | Sends a pogchamp in chat! |
-
+| `info` | Aso will tell you important information about themselves. |
+| `joke` | Sends a joke |
+| `kiss` | Mention someone you want to kiss! |
+| `rps` | Rock paper scissors against Asomataru! |
+| `topic` | Sends an open ended question to start chat |
+| `uselessfact` | Asomataru sends a useless fact! |
+| `moe` | Shows a moemorphism from r/moemorphism |
 
 
 ### Admin
@@ -38,8 +41,10 @@ Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?clien
 
 | Command | Action |
 |-|-|
-| `userinfo` | Gets the mentioned user's account info |
+| `credits` | A credit to my friends! |
+| `invite` | Invite to the support server! |
 | `serverinfo` | Gets the server info |
+| `userinfo` | Gets the mentioned user's account info |
 
 ## Changelog
 * [CHANGELOG.md](CHANGELOG.md)
