@@ -29,7 +29,6 @@ module.exports = {
             .addField("Nickname", `${member.nickname !== null ? `${member.nickname}` : "None"}`, true)
             .addField("Bot", `${bot}`, inline, true)
             .addField("Status", `${status[member.user.presence.status]}`, inline, true)
-            .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
             .addField("Joined Discord At", member.user.createdAt)
             .setFooter(`Information about ${member.user.username}`)
             .setTimestamp()
