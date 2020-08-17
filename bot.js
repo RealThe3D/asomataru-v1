@@ -19,7 +19,7 @@ const fs = require("fs");
  *      https://firebase.google.com/docs/firestore https://www.mongodb.com/
  */
 
-let bot = {client, config, prefix};
+let bot = {client, prefix};
 /**
  * These add commands, aliases, events, and functions to the client object
  * Discord Collections work like a Map/Dictionary Object
