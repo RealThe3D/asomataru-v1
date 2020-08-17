@@ -7,7 +7,7 @@ module.exports = {
         const avatarEmbed = new Discord.MessageEmbed()
             .setColor(0x333333)
             .setAuthor(`${user.username}'s Profile Picture`)
-            .setImage(user.displayAvatarURL({format: 'jpg'}));
+            .setImage(user.avatarURL({size: 2048, dynamic: true})) 
         message.channel.send(avatarEmbed);
     },
 };
