@@ -6,7 +6,7 @@ module.exports = {
 
         if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("Sorry, you don't have permissions to use this!");
 
-        let xdemb = new Discord.RichEmbed()
+        let xdemb = new Discord.MessageEmbed()
             .setColor("#000000")
             .setTitle("Kick Command")
             .addField("Description:", `Kick a member`, true)
@@ -30,7 +30,7 @@ module.exports = {
         await member.kick(reason)
             .catch(error => message.reply(`Sorry, I couldn't kick because of : ${error}`));
     
-        let kick = new Discord.RichEmbed()
+        let kick = new Discord.MessageEmbed()
             .setColor("#000000")
             .setTitle(`Kick | ${member.user.tag}`)
             .addField("User", member, true)

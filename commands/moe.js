@@ -2,17 +2,17 @@ const Discord = require("discord.js");
 const randomPuppy = require("random-puppy");
 
 module.exports = {
-    name:'dog',
-    description:'Shows a doggo! Rawr!',
-    aliases: ['doggo'],
+    name:'moe',
+    description:'Moemorphism',
+    aliases: ['moemorph'],
     execute: async (message) => {
-    const subReddits = ["dogs", "dog", "doggos"]
+    const subReddits = ["moemorphism"]
     const random = subReddits[Math.floor(Math.random() * subReddits.length)];
     const img = await randomPuppy(random);
 
     const embed = new Discord.MessageEmbed()
     .setImage (img)
-    .setTitle (`**__Who is a good doggo!__**`)
+    .setTitle (`**__Moemorphism__**`)
     .setURL (`https://reddit.com/${random}`)
     .setFooter (`From r/${random}`)
 

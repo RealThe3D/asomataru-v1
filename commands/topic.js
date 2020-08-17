@@ -3,6 +3,7 @@ module.exports = {
     aliases: 't',
     execute(message) {
         var options = [
+            "Holidays. What were your favorite holidays when you were a child?",
             "What was the last funny video you saw?",
             "What do you do to get rid of stress?",
             "What is something you are obsessed with?",
@@ -21,13 +22,13 @@ module.exports = {
             "What is a bad life?",
             "What valuable lessons should we learn from history?",
             "How do your values differ from others?",
-            "What social situations do you dread?",
+            "What do you think about 2020 so far?",
             "What is your routine for an average weekday?", //20
             "What happened in the funniest YouTube video you’ve seen?",
             "What’s the story behind how you met your best friend?",
             "What would your perfect house look like?",
             "What’s the worst work mistake you’ve made?",
-            "What would your utopia look like?" //25
+            "Anime sub or Anime dub?" //25
         ];
         var response = options[Math.floor(Math.random() * options.length)];
         message.channel.send(response).then().catch(console.error);

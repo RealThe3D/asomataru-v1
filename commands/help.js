@@ -8,12 +8,12 @@ module.exports = {
                 title: "General:",
                 fields: [{
                     name: "Command",
-                    value: "avatar\nhelp\nping\nversion\ncredits",
+                    value: "avatar\nhelp\nping\nversion\ncredits\ninvite",
                     inline: true
                 },
                 {
                     name: "Action",
-                    value: "Gets the mentioned user's avatar\nShows the commands\nPings the bot's latency\nStates the version number\nA command dedicated to my friends \o/",
+                    value: "Gets the mentioned user's avatar\nShows the commands\nPings the bot's latency\nStates the version number\nA command dedicated to my friends\n Sends an invite to the support server!",
                     inline: true
                 }
                 ]
@@ -25,12 +25,12 @@ module.exports = {
                 title: "Fun:",
                 fields: [{
                     name: "Command",
-                    value: "topic\njoke\ninfo\nuselessfact\ncoinflip\ncat\ndog",
+                    value: "topic\njoke\ninfo\nuselessfact\ncoinflip\ncat\ndog\nrps\npogchamp",
                     inline: true
                 },
                 {
                     name: "Action",
-                    value: "ends an open ended question to start chat\nSends a joke\nAsomataru introduces themself!\nSends a useless fact.\nFlips a coin!\nSends a cat pic!\n Sends a doggo picture!",
+                    value: "ends an open ended question to start chat\nSends a joke\nAsomataru introduces themself!\nSends a useless fact.\nFlips a coin!\nSends a cat pic!\n Sends a doggo picture!\n Play rock paper scissors against Asomataru!\n Shows pogchamp",
                     inline: true
                 }
                 ]
