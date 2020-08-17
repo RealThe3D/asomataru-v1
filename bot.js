@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ disableMentions: "everyone" }); //remove the parameters being passed into 
 const prefix = process.env.PREFIX;
-const token = proces..env.BOT_TOKEN;
+const token = process.env.BOT_TOKEN;
 const fs = require("fs");
 
 /**
