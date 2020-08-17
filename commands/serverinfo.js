@@ -3,11 +3,11 @@ module.exports = {
     execute(message) {
         const Discord = require("discord.js");
         const veriLevel = {
-            0: "None",
-            1: "Low",
-            2: "Medium",
-            3: "(╯°□°）╯︵ ┻━┻",
-            4: "(ノಠ益ಠ)ノ彡┻━┻"
+            NONE: "None",
+            LOW: "Low",
+            MEDIUM: "Medium",
+            HIGH: "(╯°□°）╯︵ ┻━┻",
+            VERY_HIGH: "(ノಠ益ಠ)ノ彡┻━┻"
         }
 
         let inline = true
