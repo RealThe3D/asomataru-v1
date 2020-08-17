@@ -52,7 +52,7 @@ module.exports = {
     }
 	})
 	.catch(collected => {
-		message.channel.send('expired');
+		message.channel.send('Query cancelled. Please select an reaction.');
 	});
     }
 }
