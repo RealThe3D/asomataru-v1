@@ -4,9 +4,9 @@ const randomPuppy = require("random-puppy");
 module.exports = {
     name:'anime',
     description:'Shows an anime girl!',
-    aliases: ['animegirl','animegirls','ag'],
+    aliases: ['animegirl','animegirls','ag','kawaii'],
     execute: async (message) => {
-    const subReddits = ["animegirls"]
+    const subReddits = ["awwnime"]
     const random = subReddits[Math.floor(Math.random() * subReddits.length)];
     const img = await randomPuppy(random);
 
