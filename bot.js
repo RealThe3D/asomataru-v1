@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 
 bot.once('ready', () => {
     console.log(`Bot is ready and working in ${bot.guilds.cache.size} servers with ${bot.users.cache.size} users! The bot is on version ${version}`);
-    bot.user.setPresence(`Asomataru v1.1.8.1!`);
+bot.user.setPresence({ activity: { name: 'Asomataru v1.1.8!', type: 'PLAYING' }, status: 'online' })
     console.log('Ready!');
 });
 
