@@ -5,7 +5,7 @@
     "owners": [
         "327594208758202379"
     ],
-    "mongo_uri": "MONGODB_CONNECTION_URI",
+    "mongo_uri": "mongodb://The3D:27017",
     "game": {
         "status": "online",
         "type": "LISTENING",
