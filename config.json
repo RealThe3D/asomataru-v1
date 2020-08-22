@@ -7,7 +7,7 @@
     ],
     "game": {
         "status": "online",
-        "type": "LISTENING",
+        "type": "PLAYING",
         "name": [
             "Asomataru v2.0 Beta!",
             "a!help"
