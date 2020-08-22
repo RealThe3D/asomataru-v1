@@ -4,8 +4,7 @@ module.exports = {
     description: 'Ping!',
     execute: async (message, args) => {
         const Discord = require("discord.js");
-        const package = require('.../package.json');
-        const version = (package.version);
+        const version = v2.0;
         const ping = new Discord.MessageEmbed()
             .setTitle("Ping")
             .setDescription(`Ping?`)
