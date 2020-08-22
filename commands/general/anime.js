@@ -6,6 +6,7 @@ module.exports = {
     enabled: true, // set true if command enabled
     cooldown: 0, // in seconds
     exec: async (client, message, args) => {
+        const randomPuppy = require('random-puppy');
         const subReddits = ["awwnime"]
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
         const img = await randomPuppy(random);
