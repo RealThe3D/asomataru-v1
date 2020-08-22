@@ -3,7 +3,7 @@ module.exports = {
     aliases: [],
     permissions: [],
     ownerOnly: true,
-    enabled: true,
+    enabled: false,
     cooldown: 0,
     exec: async (client, message, args) => {
         const owner = "327594208758202379";
