@@ -27,7 +27,7 @@ module.exports = async client => {
         guild.language = require(`../locales/${language}.json`);
     }
     process.stdout.write("\n");
-    console.log("   Template by barbarbar338    ");
+    console.log("   Asomataru Bot!    ");
     console.log("-------------------------------");
     console.log(`[      BOT]: ${client.user.username} is ready!`);
     console.log(`[ PREFIXES]: ${client.config.prefixes.join(" ")}`);
