@@ -1,5 +1,9 @@
 # Changelogs
 ## Versions
+
+### Asomataru v2.0
+Asomataru's is getting a huge update soon!
+## Asomataru v1.0
 ### 1.1.7.1
 Renamed `moemorphism` to `moe`.
 ### v1.1.7

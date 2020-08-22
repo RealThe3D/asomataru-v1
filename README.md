@@ -1,7 +1,11 @@
+# Asomataru Bot
+## Information
 Asomataru is a discord bot that is running on Discord.js v12 and Heroku for 24/7 Hosting!!
 Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?client_id=730622099525206086&permissions=268823558&scope=bot
+
 > I’m hoping to expand the bot with more commands and make Koro proud!
 ## Commands
+
 ### General
 | Command | Action |
 |-|-|
@@ -20,3 +24,22 @@ Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?clien
 | `cat` | Sends a cat image! |
 | `dog` | Sends a dog image! |
 | `pogchamp` | Sends a pogchamp in chat! |
+
+
+
+### Admin
+
+| Command | Action |
+|-|-|
+| `kick` | Kicks the mentioned user from the server |
+| `ban` | Bans the mentioned user from the server |
+
+### Extras
+
+| Command | Action |
+|-|-|
+| `userinfo` | Gets the mentioned user's account info |
+| `serverinfo` | Gets the server info |
+
+## Changelog
+* [CHANGELOG.md](CHANGELOG.md)
