@@ -1,11 +1,12 @@
 const { Client } = require("discord.js");
 const Mongoose = require("mongoose");
-const client = new Client();
 const TOKEN = process.env.BOT_TOKEN;
-const MongoDB_URI = process.env.MongoDB_URI;
+const client = new Client();
 client.config = require("./config.json");
-client.mongoose = require('./utils/mongoose');
-client.mongoose.init();
+Mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 client.database = Mongoose.connection;
 client.database.on("error", (err) => {
     throw err;
