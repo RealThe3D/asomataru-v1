@@ -4,10 +4,8 @@ const client = new Client();
 const TOKEN = process.env.BOT_TOKEN;
 const MongoDB_URI = process.env.MongoDB_URI;
 client.config = require("./config.json");
-    Mongoose.connect(MongoDB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+client.mongoose = require('./utils/mongoose');
+client.mongoose.init();
 client.database = Mongoose.connection;
 client.database.on("error", (err) => {
     throw err;
