@@ -1,0 +1,19 @@
+{
+    "prefixes": [
+        "a!"
+    ],
+    "owners": [
+        "327594208758202379"
+    ],
+    "mongo_uri": "MONGODB_CONNECTION_URI",
+    "game": {
+        "status": "online",
+        "type": "LISTENING",
+        "name": [
+            "Asomataru v2.0 Beta!",
+            "a!help"
+        ],
+        "url": "STREAM_URL",
+        "interval": 15
+    }
+}

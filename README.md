@@ -1,45 +1,34 @@
-# Asomataru Bot
-## Information
-Asomataru is a discord bot that is running on Discord.js v12 and Heroku for 24/7 Hosting!!
-Wanna add the bot? Use this link: https://discord.com/api/oauth2/authorize?client_id=730622099525206086&permissions=268823558&scope=bot
+Bot template with multi language support prepared using DiscordJS v12
+---
 
-> I’m hoping to expand the bot with more commands and make Koro proud!
-## Commands
+- Easy to use bot template that can be installed and customized quickly. Now with MongoDB support!
+- You just need to edit `config.json` file
+- If you are using DiscordJS v11 don't worry you can use the [v11 template](https://github.com/Project-Hammer/discordjs-v11-template) of the same code
 
-### General
-| Command | Action |
-|-|-|
-| `avatar` | Gets the mentioned user's avatar |
-| `help` | Shows the commands |
-| `ping` | Pings the bot's latency |
-| `version` | States the version number |
-### Fun
-| Command | Action |
-|-|-|
-| `topic` | Sends an open ended question to start chat |
-| `joke` | Sends a joke |
-| `info` | Aso will tell you important information about themselves. |
-| `uselessfact` | Asomataru sends a useless fact! |
-| `coinflip` | Flip a coin! |
-| `cat` | Sends a cat image! |
-| `dog` | Sends a dog image! |
-| `pogchamp` | Sends a pogchamp in chat! |
+Get live support
+---
+- You can quickly find me on [my Discord server](https://bariscodes.me/discord)
 
+Installation
+--- 
+- You need [Node.js](https://nodejs.org/) V12 or higher.
+- Clone or fork this repository
+- Edit `config.json` file
+- Run `npm install` command
+- Run `npm start` command
 
+Contributing
+---
+- Feel free to open PRs
 
-### Admin
+Quick Documentation
+---
 
-| Command | Action |
-|-|-|
-| `kick` | Kicks the mentioned user from the server |
-| `ban` | Bans the mentioned user from the server |
+<b>Q:</b> How can I add more languages?<br>
+<b>A:</b> To add more languages just copy one of the `en.json` file and translate it. <b>Do not change the key names</b>.
 
-### Extras
+<b>Q:</b> Can I use this codes with DiscordJS v11?<br>
+<b>A:</b> Basicly, you can't. But you can use the [v11 template](https://github.com/Project-Hammer/discordjs-v11-template) of the same code!
 
-| Command | Action |
-|-|-|
-| `userinfo` | Gets the mentioned user's account info |
-| `serverinfo` | Gets the server info |
-
-## Changelog
-* [CHANGELOG.md](CHANGELOG.md)
+<b>Q:</b> I want to add new command, but how can I use language system?<br>
+<b>A:</b> Just add you new command and use `message.guild.language.TEXT_KEY`. And don't forget to add `TEXT_KEY` and its value to all language files. 

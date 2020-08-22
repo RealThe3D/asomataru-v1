@@ -1,37 +1,37 @@
-onst Discord = require("discord.js");
-module.exports = {
-	name: "message",
-	func: runAll,
-};
-
-function runAll(bot, message) {
-	runCommands(bot, message);
-}
-
-async function runCommands(bot, message) {
-	if (!message.guild) return;
-	if (message.author.bot) return;
-	let { client, config, prefix } = bot;
-	if (!message.content.startsWith(prefix)) return;
-	const args = message.content.slice(prefix.length).trim().split(/ +/g);
-	const cmd = args.shift().toLowerCase();
-	let command = client.commands.get(cmd) || client.commands.get(client.aliases.get(cmd));
-	if (!command) return;
-	if (command.adminOnly === true) {
-		if (!config.admins.includes(message.author.id))
-			return client.functions.get("functions").response(message, "This command requires bot owner permissions");
-	}
-	bot.message = message;
-	bot.args = args;
-	//add additional things you would like to pass to the command runners here
-	try {
-		await command.run(bot);
-	} catch (err) {
-		//accepts any error messages and returns to the user a custom message
-		let errMsg = err.toString(); //just add `throw "?error message text"` anywhere in your code
-		if (errMsg.startsWith("?"))
-			//prefix any thrown errors with a "?" to distinguish it from other errors
-			client.functions.get("functions").response(message, errMsg.replace(/\?/, ""));
-		else console.log(err); //should log to console any errors that are not purposely thrown
-	}
+const guildModel = require("../models/guildModel");
+const activeUsers = {};
+module.exports = async message => {
+    if (message.author.bot || !message.guild) return;
+    let prefix = message.client.config.prefixes[0], cmdFile;
+    for (let i = 0; i < message.client.config.prefixes.length; i++) {
+        if (message.content.startsWith(message.client.config.prefixes[i])) prefix = message.client.config.prefixes[i];
+    }
+    if (!message.content.startsWith(prefix)) return;
+    if (!message.guild.language) {
+        let language = "en";
+        let guildDocument = await guildModel.findOne({
+            guildID: message.guild.id
+        });
+        if (guildDocument && guildDocument.language) language = guildDocument.language;
+        message.guild.language = require(`../locales/${language}.json`);
+    }
+    let args = message.content.slice(prefix.length).split(" ");
+    command = args.shift();
+    if (message.client.commands.has(command)) cmdFile = message.client.commands.get(command);
+    else if (message.client.aliases.has(command)) cmdFile = message.client.aliases.get(command);
+    else return;
+    if (!cmdFile.enabled) return await message.channel.send(message.guild.language.command_disabled);
+    if (cmdFile.ownerOnly && !message.client.config.owners.includes(message.author.id)) return await message.channel.send(message.guild.language.command_owner_only);
+    if (cmdFile.permissions && !(message.client.config.owners.includes(message.author.id) || message.member.permissions.has(cmdFile.permissions))) return await message.channel.send(message.guild.language.not_enough_permission.replace(/{permissions}/g, cmdFile.permissions.join(", ")));
+    if (cmdFile.cooldown && typeof cmdFile.cooldown === "number" && cmdFile.cooldown >= 1 && cmdFile.cooldown <= 1440) {
+        if (!activeUsers.hasOwnProperty(cmdFile.name)) activeUsers[cmdFile.name] = [];
+        if (activeUsers[cmdFile.name].includes(message.author.id)) return await message.channel.send(message.guild.language.wait_cooldown.replace(/{cooldown}/g, cmdFile.cooldown));;
+    } 
+    cmdFile.exec(message.client, message, args);
+    if (activeUsers.hasOwnProperty(cmdFile.name)) {
+        activeUsers[cmdFile.name].push(message.author.id);
+        message.client.setTimeout(() => {
+            activeUsers[cmdFile.name].splice(activeUsers[cmdFile.name].indexOf(message.author.id), 1);
+        }, cmdFile.cooldown * 1000);
+    }
 }
