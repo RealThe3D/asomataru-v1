@@ -7,6 +7,7 @@ module.exports = {
     cooldown: 0, // in seconds
     exec: async (client, message, args) => {
         const randomPuppy = require('random-puppy');
+        const Discord = require('discord.js');
         const subReddits = ["awwnime"]
         const random = subReddits[Math.floor(Math.random() * subReddits.length)];
         const img = await randomPuppy(random);
